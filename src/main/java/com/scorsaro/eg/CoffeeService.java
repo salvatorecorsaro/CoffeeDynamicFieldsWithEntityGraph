@@ -1,5 +1,6 @@
 package com.scorsaro.eg;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,10 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class CoffeeService {
 
-    @Autowired
-    private CoffeeRepository coffeeRepository;
+
+    private final CoffeeRepository coffeeRepository;
 
     public List<Coffee> getCoffeesWithSelectedFields(List<String> fields) {
         return coffeeRepository.findAllWithSelectedFields(fields);
