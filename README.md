@@ -21,5 +21,5 @@ This project is a Spring Boot application that provides a RESTful API to manage 
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/coffee-api.git
+git clone https://github.com/salvatorecorsaro/CoffeeDynamicFieldsWithEntityGraph.git
 cd coffee-api
